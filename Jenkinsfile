@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Execute tests') {
             steps {
-                sh 'npm run build'
+                sh 'npm run test:nowatch'
             }
         }
         stage('Build application') {
